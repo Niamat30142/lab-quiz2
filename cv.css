@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #81f587;
+}
+
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #cae976;
+}
+.right-section{
+    grid-column: span 5;
+    background-color: #f3caca;
+    height: 100%;
+}
+
+
+.left-content{
+    padding: 2rem 3rem;
+}
+.profile{
+    width: 100%;
+    border-bottom: 1px solid #999b4b;
+}
+
+.image{
+    width: 100%;
+    text-align: center;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #002333;
+    
+}
+
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #010b1b;
+}
+
+.skills-section ul{
+    padding-top: 2rem;
+}
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+}
+
+
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2611e7;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.right-title::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .2rem;
+    background-color: rgb(240, 13, 13);
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.para{
+    line-height: 1.6rem;
+    color: #000f0f;
+    font-size: 1.2rem;
+    font-size: bold;
+}
+
+.sect{
+    padding-bottom: 2rem;
+}
+
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #002333;
+    text-transform: uppercase;
+}
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #2D9CDB;
+    text-transform: uppercase;
+}
+
+.tl-content{
+    border-left: 1px solid rgb(240, 8, 8);
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: #2D9CDB;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
+
